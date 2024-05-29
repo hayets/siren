@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+    <title>Siren</title>
+</head>
+<body>
+        <!--<div class="tabs">
+            <div class="tab mainleft active">
+                <span>eyword Grabber</span>
+            </div>
+            <div class="tab sideright">
+                <span>Multiword Filter</span>
+            </div>
+            <div class="tab sideright">
+                <span>Coming Soon</span>
+            </div>
+        </div> -->
+
+        <div class="container">
+
+        <div class="tabs">
+            <div class="tab mainleft active">
+                <span>Keyword Grabber</span>
+            </div>
+            <div class="tab sideright">
+                <span>Multiword Filter</span>
+            </div>
+            <div class="tab sideright">
+                <span>Coming Soon</span>
+            </div>
+        </div>
+
+
+            <div class="left">
+                <label style="color: #A9AAA0; margin: 5px 15px 20px 5px;">
+                Before using Keyword Grabber, make sure the targeted files are stored in a folder</label>
+                <label for="input1">Source Folder:</label>
+                <input type="text" id="input1" placeholder="C:\Users\Desktop\Pre-owned items">
+                
+                <label for="input2">Keyword:</label>
+                <input type="text" id="input2" placeholder="pre-owned, 典藏款...">
+                
+                <label for="input3">Desktop Folder:</label>
+                <input type="text" id="input3" placeholder="C:\Users\Desktop\Pre-owned items">
+                
+                <button id="doneButton">Done</button>
+                <button id="resetButton">Reset</button>
+            </div>
+
+
+            <div class="right">
+                <div id="video1" class="video-container">
+                    <iframe width="560" height="315" src="https://lottie.host/embed/53f5031a-8699-4c89-b107-aab8139d10ef/juXEOpo24m.json" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    <p>the place where the files are stored</p>
+                </div>
+                <div id="video2" class="video-container">
+                    <!--iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_2" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+                    <p>
+                        enter a keyword you are looking
+                    </p>
+                </div>
+                <div id="video3" class="video-container">
+                    <!--iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID_3" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+                    <p>where you want to store the new file</p>
+                </div>
+                <div id="displayInputs" class="hidden">
+                    <button id="copyButton">Copy</button>
+                    <h3>it's all set! <br>
+                    click to copy the code and paste to your VBA editor</h3>
+                    <div id="inputValues"></div>
+                </div>
+                <div id="defaultMessage">
+                    <p>Bringing Scattered Keywords Together
+                        In One File<br>
+                    </p>
+                    <div class="square top-left"></div>
+                    <div class="square top-right"></div>
+                    <div class="square bottom-left"></div>
+                    <div class="square bottom-right"></div>
+                </div>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
