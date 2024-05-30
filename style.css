@@ -170,7 +170,7 @@ body {
 
 .left {
     width: 45%;
-    background-color: #FFF575;
+    background-color: white;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -186,7 +186,7 @@ body {
 .left input {
     padding: 10px;
     font-size: 16px;
-    border: none;
+    border: 1.5px solid  #9FBFFF;
     /*background-color: #DFD456; */
     border-radius: 4px;
     margin-bottom: 15px;
@@ -198,7 +198,7 @@ input::placeholder{
 
 .right {
     width: 80%;
-    background-color: #FFF575;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -242,18 +242,18 @@ input::placeholder{
 
 #displayInputs {
     background: white;
-    margin: 35px 30px 10px 10px;
+    margin: 88px 30px 10px 10px;
     border-radius: 4px;
-    border: 5px solid #5188F4;
-    width: 90%;
-    height: 66%;
+    border: 5px solid #FFF575;
+    width: 80%;
+    height: 60%;
     overflow: hidden;
     text-align: center;
 
     h3{
         margin:30px;
         font-size: 24px;
-        color: #5188F4;
+        color: #a9aaa0;
             }
 }
 
@@ -269,8 +269,8 @@ input::placeholder{
     padding: 10px 20px;
     font-size: 24px;
     border: none;
-    background-color: #5188F4;
-    color: white;
+    background-color: #FFF575;
+    color: #a9aaa0;
     width: 100%;
     height: 24%;
     cursor: pointer;
@@ -278,7 +278,7 @@ input::placeholder{
 }
 
 #copyButton:hover {
-    background-color: #0056b3;
+    background-color: #DFD456;
     color: white;
 }
 
