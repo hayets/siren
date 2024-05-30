@@ -2,25 +2,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const input1 = document.getElementById('input1');
     const input2 = document.getElementById('input2');
     const input3 = document.getElementById('input3');
+    const inputArea = document.getElementById('inputArea')
     
     const video1 = document.getElementById('video1');
     const video2 = document.getElementById('video2');
     const video3 = document.getElementById('video3');
+    const resultarea = document.getElementById('result')
+
     
     const doneButton = document.getElementById('doneButton');
     const copyButton = document.getElementById('copyButton');
     const resetButton = document.getElementById('resetButton');
     const inputValues = document.getElementById('inputValues');
     const defaultMessage = document.getElementById('defaultMessage');
+    const convertBtn = document.getElementById('convert');
+
+
 
     function showVideo(video) {
         video1.style.display = 'none';
         video2.style.display = 'none';
         video3.style.display = 'none';
         video.style.display = 'flex';
-        displayInputs.style.display = 'none';  // Hide displayInputs when a video is shown
-        defaultMessage.style.display = 'none';  // Hide the default message when a video is shown
+        displayInputs.style.display = 'none';
+        defaultMessage.style.display = 'none';
     }
+
+
 
     function displayInputValues() {
         const value1 = input1.value;
@@ -79,13 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
             End Sub</p><br>
         `;
 
-        displayInputs.style.display = 'block';  // Show the displayInputs div
+        displayInputs.style.display = 'block';  
         video1.style.display = 'none';
         video2.style.display = 'none';
-        video3.style.display = 'none';  // Hide all videos
-        defaultMessage.style.display = 'none';  // Hide the default message
+        video3.style.display = 'none';  
+        defaultMessage.style.display = 'none'; 
         inputValues.style.display ='none';
     }
+    
+
+
+
 
     function copyToClipboard() {
         const tempInput = document.createElement('textarea');
@@ -101,18 +113,40 @@ document.addEventListener('DOMContentLoaded', () => {
         input1.value = '';
         input2.value = '';
         input3.value = '';
-        displayInputs.style.display = 'none';  // Hide the displayInputs div
+        displayInputs.style.display = 'none';
         video1.style.display = 'none';
         video2.style.display = 'none';
-        video3.style.display = 'none';  // Hide all videos
-        defaultMessage.style.display = 'block';  // Show the default message
+        video3.style.display = 'none';
+        defaultMessage.style.display = 'flex';  
     }
 
     input1.addEventListener('focus', () => showVideo(video1));
     input2.addEventListener('focus', () => showVideo(video2));
     input3.addEventListener('focus', () => showVideo(video3));
 
+
     doneButton.addEventListener('click', displayInputValues);
     copyButton.addEventListener('click', copyToClipboard);
     resetButton.addEventListener('click', resetPage);
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const circles = document.querySelectorAll(".circle");
+
+    circles.forEach(circle => {
+        const randomTime = Math.random() * 5 + 3; 
+
+        if (circle.classList.contains('top-left')) {
+            circle.style.animation = `moveTopLeft ${randomTime}s ease-in-out infinite`;
+        } else if (circle.classList.contains('top-right')) {
+            circle.style.animation = `moveTopRight ${randomTime}s ease-in-out infinite`;
+        } else if (circle.classList.contains('bottom-left')) {
+            circle.style.animation = `moveBottomLeft ${randomTime}s ease-in-out infinite`;
+        } else if (circle.classList.contains('bottom-right')) {
+            circle.style.animation = `moveBottomRight ${randomTime}s ease-in-out infinite`;
+        }
+    });
 });

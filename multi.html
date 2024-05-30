@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+    <title>Siren</title>
+</head>
+<body>
+	    <div class="container">
+        <div class="tabs">
+            <div class="tab mainleft active">
+                <span>Multiword Filter</span>
+            </div>
+            <div class="tab sideright">
+                <span><a href="index.html">Keyword Grabber</a></span>
+            </div>
+            <div class="tab sideright">
+                <span>Coming Soon</span>
+            </div>
+        </div>
+
+        <div class="left">
+            <label style="color: #A9AAA0; margin: 5px 15px 20px 5px;">
+                Enter your non-delimited data below, click the convert button, and it ready separated for you on the right 
+            </label>
+            <textarea id="inputArea" placeholder="Enter numbers on separate lines..."></textarea>
+            <button id="convert" onclick="convertLines()">Convert</button>
+            <button id="resetButton" onclick="resetPage()">Reset</button>
+        </div>
+
+        <div class="right">
+            <div id="video1" class="video-container">
+                <iframe width="560" height="315" src="conver.gif" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                <p>the mass multi-segment data you want to convert to a line</p>
+            </div>
+            <div id="resultContainer" class="result-container hidden">
+                <button id="copyButton" onclick="copyToClipboard()">Copy</button>
+                <div id="result"></div>
+            </div>
+            <div id="defaultMessage" class="defaultMessage">
+                <p>Bringing Multilines Together<br>Into One Line<br></p>
+                <div class="circle top-left"></div>
+                <div class="circle top-right"></div>
+                <div class="circle bottom-left"></div>
+                <div class="circle bottom-right"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="click.js"></script>
+</body>
+</html>
