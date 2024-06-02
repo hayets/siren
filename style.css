@@ -471,3 +471,45 @@ p {
 }
 
 
+
+
+/*other css*/
+.fl-container {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.fl-icon {
+    width: 30px;
+    height: 30px;
+    background-color: #FFF575;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.fl-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #A9AAA0;
+}
+
+.download-btn {
+    background-color: #5188F4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+}
+
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+

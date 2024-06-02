@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+TC:wght@100..900&family=Tsukimi+Rounded&display=swap" rel="stylesheet">
+    <title>Siren</title>
+</head>
+<body>
+    <div class="container">
+
+            <div class="tabs">
+                <div class="tab mainleft active">
+                    <span>Others</span>
+                </div>
+                <div class="tab sideright">
+                    <span><a href="multi.html">Comma Seperater</a></span>
+                </div>
+                <div class="tab sideright">
+                    <span><a href="index.html">Keyword Grabber</a></span>
+                </div>
+            </div>
+
+
+            <div class="left">
+                    <label style="color: #A9AAA0; margin: 5px 15px 20px 5px;">
+                    Before using Keyword Grabber, make sure the targeted files are stored in a folder
+                    </label>
+
+
+                    <div class="fl-container">
+                        <div class="fl-icon"></div>
+                        <div class="fl-text">formator</div>
+                        <button class="download-btn" onclick="downloadFile('modules/formator.bas', 'formator.bas')">Download</button>
+                    </div>
+
+                    <div class="fl-container">
+                        <div class="fl-icon"></div>
+                        <div class="fl-text">double check</div>
+                        <button class="download-btn" onclick="downloadFile()">Download</button>
+                    </div>
+            </div>
+
+
+            <div class="right">
+                    <div id="defaultMessage" class="defaultMessage">
+                        <p>one click to download<br>useful modules</p>
+                        <div class="circle top-left"></div>
+                        <div class="circle top-right"></div>
+                        <div class="circle bottom-left"></div>
+                        <div class="circle bottom-right"></div>
+                    </div>
+            </div>
+            
+    </div>
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
