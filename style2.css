@@ -129,7 +129,7 @@ body {
 
 .container {
     display: flex;
-    width: 80%;
+    width: 81%;
     height: 75%;
 }
 
@@ -238,6 +238,10 @@ textarea::placeholder {
     color: #5188F4;
     overflow: hidden;
     z-index: 1;
+
+    .sscreen{
+        display: none;
+    }
 }
 
 .defaultMessage p {
@@ -380,5 +384,44 @@ p {
     50% {
         transform: translate(-125px, -125px);
     }
+}
+
+
+
+
+/**mobile**/
+@media (max-width: 768px) {
+    .container{
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .tabs{
+        display: none;
+    }
+
+    .left{
+        display: none;
+    }
+
+    .right{
+        width: 100vw;
+        border-radius: 0;
+        background-color: #FFFFAC;
+    }
+
+    .sscreen{
+        display: block !important;
+    }
+
+    .bgscreen{
+        display: none;
+    }
+
+    [class^="video"]{
+        display: none;
+    }
+
+
 }
 
