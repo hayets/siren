@@ -130,7 +130,7 @@ body {
 .container {
     display: flex;
     width: 81%;
-    height: 75%;
+    height: 76%;
 }
 
 .left, .right {
